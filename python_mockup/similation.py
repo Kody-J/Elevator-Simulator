@@ -15,6 +15,10 @@ def move(user, elevators):
         if difference < nearestDifference:
             nearestDifference = difference
             nearestElevator = elevator
+        elif difference == nearestDifference:
+            nearestDifference = difference
+            nearestElevator = elevator
+            break
 
     nearestElevator.floor = user.floor
     nearestElevator.direction = user.direction
@@ -27,4 +31,7 @@ if __name__ == '__main__':
     while users:
         user = users.popleft()
         timeWaiting = move(user, elevators)
+        #time waiting is calculated by number of floors moved * interval
+        #current assumption seems like 10 seconds per floor. Seems like 
+        #we have the freedom to create an arbitrary metric as such
         print (user, timeWaiting)
