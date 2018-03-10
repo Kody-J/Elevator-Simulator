@@ -4,12 +4,12 @@ from elevator import Elevator, DEFAULT_HEIGHT
 from collections import deque
 from random import randrange, choice
 
-NAMES = ['Oliver', 'Jack', 'Harry', 'Jacob', 'Charlie', 'Thomas', 'George',
-         'Oscar', 'James', 'William', 'Amelia', 'Olivia', 'Isla', 'Emily',
-         'Poppy', 'Ava', 'Isabella', 'Jessica', 'Lily', 'Sophie']
 UP = True
 DOWN = False
 DIRECTIONS = (UP, DOWN)
+NAMES = ['Oliver', 'Jack', 'Harry', 'Jacob', 'Charlie', 'Thomas', 'George',
+         'Oscar', 'James', 'William', 'Amelia', 'Olivia', 'Isla', 'Emily',
+         'Poppy', 'Ava', 'Isabella', 'Jessica', 'Lily', 'Sophie']
 
 def makeUsers(count=10, upperLimit=DEFAULT_HEIGHT):
     """ returns a deque of users, defaults to 10"""

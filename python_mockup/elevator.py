@@ -1,12 +1,10 @@
 DEFAULT_HEIGHT = 34
 DEFAULT_FLOOR = 0
-UP = True
-DOWN = False
-DEFAULT_DIRECTION = UP 
+DEFAULT_DIRECTION = True #heading up from the ground floor
 
 class Elevator(object):
     
-    def __init__(self, direction, height=DEFAULT_HEIGHT, floor=DEFAULT_FLOOR):
+    def __init__(self, direction=DEFAULT_DIRECTION, height=DEFAULT_HEIGHT, floor=DEFAULT_FLOOR):
         self.direction = direction
         self.height = height
         self.floor = floor
