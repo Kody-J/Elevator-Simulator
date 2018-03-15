@@ -5,25 +5,25 @@
 class User {
 private:
 	std::string name;
-	int floor;
+	int currentFloor;
+	int targetFloor;
 	bool direction;
+	int duration;
+	std::string id;
 public:
-	User() {
-		name = "";
-		floor = 0;
-		direction = true;
-	}
-	User(std::string n, int f, bool d) {
-		name = n;
-		floor = f;
-		direction = d;
-	}
+	User();
+	User(std::string n, int currentF, int targetF, int orderPassed);
 
-	std::string getName() { return name; };
-	int getFloor() { return floor; };
-	bool getDirection() { return direction; };
+	std::string getName();
+	int getCurrentFloor();
+	int getTargetFloor();
+	bool getDirection();
+	std::string getUserId(int order);
 
-	void setName(int newName) { name = newName; };
-	void setFloor(int newFloor) { floor = newFloor; };
-	void setDirection(bool newDir) { direction = newDir; };
+	void setName(int newName);
+	void setCurrentFloor(int newFloor);
+	void setTargetFloor(int newFloor);
+	
+	void moveFloor();
+	void addBoardingDuration();
 };
