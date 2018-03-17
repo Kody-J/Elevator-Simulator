@@ -5,9 +5,7 @@ using namespace std;
 
 class Elevator : private User
 {
-
 private:
-
 	int height;
 	map<string, User> users;
 	int floor;
@@ -16,10 +14,10 @@ private:
 public:
 	Elevator();
 	Elevator(int h, int f, bool d);
-
+	
 	int getHeight();
 	int getFloor();
-
+	
 	bool getDirrection();
 	bool hasUsersRiding();
 	
