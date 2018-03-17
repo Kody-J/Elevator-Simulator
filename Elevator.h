@@ -10,7 +10,6 @@ private:
 	map<string, User> users;
 	int floor;
 	bool direction; // True = up
-
 public:
 	Elevator();
 	Elevator(int h, int f, bool d);
