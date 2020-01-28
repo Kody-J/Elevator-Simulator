@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from util import makeUsers, makeElevators
-
+ 
 def getNearestElevator(floor, elevators):
     nearestDiff = abs(floor - elevators[0].floor)
     retval = (elevators[0], nearestDiff)
