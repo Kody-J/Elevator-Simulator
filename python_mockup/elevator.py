@@ -3,7 +3,7 @@ DEFAULT_FLOOR = 0
 DEFAULT_DIRECTION = True #heading up from the ground floor
 DEFAULT_USERS = {} 
 
-class Elevator(object):
+class Elevator(object): 
     
     def __init__(self, direction=DEFAULT_DIRECTION, height=DEFAULT_HEIGHT,
                  floor=DEFAULT_FLOOR, users=DEFAULT_USERS):
