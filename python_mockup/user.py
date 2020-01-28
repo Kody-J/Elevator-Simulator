@@ -18,7 +18,7 @@ class User(object):
         return msg.format(name=self.name, current=self.currentFloor,
                           target=self.targetFloor, direction=self.direction,
                           duration=self.duration)
-
+ 
     def getDirection(self):
         return self.currentFloor < self.targetFloor
 
